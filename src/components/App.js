@@ -1,11 +1,11 @@
 /** @format */
 
-import Card from "./Home";
+import Modal from "./Modal";
 
 const App = () => {
   return (
     <div>
-      <Card />
+      <Modal />
     </div>
   );
 };

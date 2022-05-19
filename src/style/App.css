@@ -1,0 +1,38 @@
+/** @format */
+:root {
+  /*  color */
+  --background: #141519;
+  --modal-color: #242832;
+  --font-color: #ffffff;
+  --overlay-color: #fb7711;
+}
+
+body {
+  background-color: var(--background);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  min-height: 100vh;
+  z-index: 0;
+}
+.modal-rating {
+  background-color: #fb7711;
+  padding: 20px;
+  color: var(--font-color);
+  font-family: sans-serif;
+  max-width: 429px;
+  width: 95%;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+}
+.modal-rating .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--modal-color);
+  border-radius: 10px;
+  transform: translate(5px, -5px);
+}
