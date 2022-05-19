@@ -1,7 +1,8 @@
 /** @format */
 
 import { combineReducers } from "redux";
+import { rateReducer } from "../actions/rate/reducer";
 
 export default combineReducers({
-  replaceMe: () => "hi there",
+  rate: rateReducer,
 });
