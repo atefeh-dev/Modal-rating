@@ -11,17 +11,24 @@ const initialState = {
   ],
 };
 export const rateReducer = (state = initialState, action) => {
+  console.log(action);
+
   switch (action.type) {
     case rateActionType.setRate:
       return {
-        ...state.rates,
-        name: "atefe",
-        score: action.rateValue,
-        dateTime: "00-00",
+        ...state,
+        rates: [
+          ...state.rates,
+          {
+            name: "Sadra",
+            score: action.rate,
+            dateTime: "00-00",
+          },
+        ],
       };
     default:
       return {
-        ...state.rates,
+        ...state,
       };
   }
 };
