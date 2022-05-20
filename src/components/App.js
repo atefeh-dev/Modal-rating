@@ -1,7 +1,7 @@
 /** @format */
 
 import Modal from "./Modal";
-import Navcolor from "./colorNavBar";
+import ColorNavbarBar from "./ColorNavBar";
 import { useSelector } from "react-redux";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
   console.log(themeController);
   return (
     <div className={themeController.theme}>
-      <Navcolor />
+      <ColorNavbarBar />
       <Modal />
     </div>
   );
