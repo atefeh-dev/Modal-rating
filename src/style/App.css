@@ -2,7 +2,7 @@
 
 
 .yellow-theme {
-  --modal-background: #f1c232;
+  --modal-background: #efcc00;
   --modal-color: #242832;
   --font-color: #ffffff;
   --background: #141519;
@@ -41,7 +41,7 @@ body {
   background-color: #141519;
 }
 .yellow{
-  background-color: #f1c232;
+  background-color: #efcc00;
 }
 .blue{
     background-color: #0C6991;
