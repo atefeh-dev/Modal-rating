@@ -1,14 +1,58 @@
 /** @format */
-:root {
-  /*  color */
-  --background: #141519;
+
+
+.yellow-theme {
+  --modal-background: #f1c232;
   --modal-color: #242832;
   --font-color: #ffffff;
-  --orange: #fb7711;
+  --background: #141519;
+  --paragraph: #a4a9b2;
+  --lable: #26303b;
+  --hover: #7c8897;
 }
-
+.blue-theme {
+  --modal-color: #242832;
+  --modal-background: #0C6991;
+  --font-color: #ffffff;
+  --background: #141519;
+  --paragraph: #a4a9b2;
+  --lable: #26303b;
+  --hover: #7c8897;
+}
+.red-theme {
+  --modal-color: #242832;
+  --modal-background: #e50000;
+  --font-color: #ffffff;
+  --background: #141519;
+  --paragraph: #a4a9b2;
+  --lable: #26303b;
+  --hover: #7c8897;
+}
+.orange-theme {
+  --modal-color: #242832;
+  --modal-background: #fb7711;
+  --font-color: #ffffff;
+  --background: #141519;
+  --paragraph: #a4a9b2;
+  --lable: #26303b;
+  --hover: #7c8897;
+}
 body {
-  background-color: var(--background);
+  background-color: #141519;
+}
+.yellow{
+  background-color: #f1c232;
+}
+.blue{
+    background-color: #0C6991;
+
+}
+.red{
+  background-color:#e50000;
+}
+.orange{
+  background-color:#fb7711;
+
 }
 .container {
   display: flex;
@@ -19,7 +63,7 @@ body {
   z-index: 0;
 }
 .modal-rating {
-  background-color: var(--orange);
+  background-color: var(--modal-background);
   padding: 20px;
   color: var(--font-color);
   font-family: serif;
@@ -41,8 +85,8 @@ body {
   padding: 20px;
 }
 .modal-rating i {
-  color: var(--orange);
-  background-color: #26303b;
+  color: var(--modal-background);
+  background-color: var(--lable);
   padding: 10px;
   border-radius: 50%;
   width: 4%;
@@ -50,7 +94,7 @@ body {
 }
 .modal-rating p {
   font-size: 16px;
-  color: #a4a9b2;
+  color: var(--paragraph);
 }
 .modal-rating .rating {
   display: flex;
@@ -67,8 +111,8 @@ body {
   padding: 20px;
   font-size: 20px;
   margin-top: 25px;
-  color: #a4a9b2;
-  background-color: #26303b;
+  color: var(--paragraph);
+  background-color: var(--lable);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -76,16 +120,16 @@ body {
   display: none;
 }
 .modal-rating .rating label:hover {
-  background-color: #7c8897;
-  color: #ffffff;
+  background-color: var(--hover);
+  color: var(--font-color);
 }
 .modal-rating .rating input:checked + label {
-  background-color: var(--orange);
-  color: #ffffff;
+  background-color: var(--modal-background);
+  color: var(--font-color);
 }
 .modal-rating button[type="submit"] {
-  background-color: var(--orange);
-  color: #ffffff;
+  background-color: var(--modal-background);
+  color: var(--font-color);
   width: 100%;
   padding: 15px;
   font-size: 14px;
@@ -97,6 +141,28 @@ body {
   cursor: pointer;
 }
 .modal-rating button[type="submit"]:hover {
-  color: #fb7711;
-  background-color: #ffffff;
+  color: var(--modal-background);
+  background-color: var(--font-color);
+}
+.NavColor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--modal-background));
+  color: var(--font-color);
+}
+.color-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+  color: var(--hover);
+  border-radius: 50%;
+  cursor: pointer;
 }

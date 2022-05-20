@@ -1,10 +1,12 @@
 /** @format */
 
 import Modal from "./Modal";
+import Navcolor from "./colorNavBar";
 
 const App = () => {
   return (
-    <div>
+    <div className="yellow-theme">
+      <Navcolor />
       <Modal />
     </div>
   );
