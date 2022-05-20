@@ -1,17 +1,18 @@
 /** @format */
 
 import { rateActionType } from "./actionType";
+import { dateTimenNow } from "../../functions/dateTimeNow";
 const initialState = {
   rates: [
     {
-      name: "atefeh",
+      name: "Atefeh",
       score: "5",
-      dateTime: "3/5/2020",
+      dateTime: "2022-5-20 10:20:40",
     },
   ],
 };
 export const rateReducer = (state = initialState, action) => {
-  console.log(action);
+  console.log(action.rate);
 
   switch (action.type) {
     case rateActionType.setRate:
@@ -21,8 +22,8 @@ export const rateReducer = (state = initialState, action) => {
           ...state.rates,
           {
             name: "Sadra",
-            score: action.rate,
-            dateTime: "00-00",
+            score: action.score,
+            dateTime: dateTimenNow(),
           },
         ],
       };

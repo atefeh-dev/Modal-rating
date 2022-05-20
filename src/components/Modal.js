@@ -11,7 +11,6 @@ const Modal = () => {
 
   const handleRadioChange = (e) => {
     setCurrentRadioValue(e.target.value);
-    console.log(e.target.value);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
